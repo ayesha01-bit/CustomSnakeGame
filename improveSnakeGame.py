@@ -97,9 +97,9 @@ def showGame():
             snake.append(snake[-1])  # Add a new segment to the snake (grow)
         if snake[0][0] > WINDOW or snake[0][0] < 0 or snake[0][1] > WINDOW or snake[0][1] < 0:
             isGameOver = True
-        snakeBody = snake[1:]
-        if newHead in snakeBody:
-            isGameOver = True
+        # snakeBody = snake[1:]
+        # if newHead in snakeBody:
+        #     isGameOver = True
         snake = [newHead] + snake[:-1]
 
         screen.fill('black')
